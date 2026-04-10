@@ -27,8 +27,8 @@ export default function About() {
             <div className="space-y-4">
               <h2 className="text-2xl font-semibold">Personal Interests</h2>
               <p className="text-lg text-foreground/80 leading-relaxed">
-                Beyond writing code, I am an engineering enthusiast fascinated by the intersection of software and the physical world. I spend my time exploring robotics, simulating autonomous systems, and studying distributed networks. I am also deeply driven by "Tech for Good," taking a strong personal interest in how AI and web architectures can be combined to create accessible healthcare solutions and medical diagnostic tools.
-              </p>
+                Beyond my work in technology, I am a competitive chess player with an official international rating from FIDE, having participated in and achieved results in various tournaments. This experience has enhanced my analytical thinking, strategic planning, and decision-making under pressure.
+                In addition, I actively play football, which has strengthened my teamwork, discipline, and ability to collaborate effectively toward shared goals.              </p>
             </div>
           </AnimatedText>
 
