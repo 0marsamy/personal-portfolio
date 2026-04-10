@@ -18,21 +18,21 @@ export default function Hero() {
             height={120}
             priority
           />
-          <h1 className="text-4xl font-bold">Your Name</h1>
+          <h1 className="text-4xl font-bold">Omar Samy</h1>
           <p className="text-lg text-foreground/80 font-[family-name:var(--font-geist-mono)]">
-            Your Job Title
+            Full-Stack Developer & AI/ML Engineer
           </p>
         </AnimatedText>
 
-        <AnimatedText 
+        <AnimatedText
           className="max-w-2xl text-center sm:text-left"
         >
           <p className="text-foreground/80 leading-relaxed">
-            Write a brief self-introduction here, including your educational background, job objectives, or current work status.
+            Passionate Full Stack Developer dedicated to building end-to-end digital solutions. Bridging clean frontend design with powerful backend logic to solve complex real-world problems.
           </p>
         </AnimatedText>
 
-        <AnimatedText 
+        <AnimatedText
           className="flex gap-4 items-center flex-row"
         >
           <a
@@ -46,7 +46,7 @@ export default function Hero() {
               px-5                                   // Fixed padding
               text-base                              // Fixed font size
             "
-            href="https://github.com/your-username" // Replace with your GitHub profile link
+            href="https://github.com/0marsamy" // Replace with your GitHub profile link
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -71,7 +71,7 @@ export default function Hero() {
               text-base                              // Fixed font size
               min-w-44                              // Fixed minimum width
             "
-            href="/resume.pdf" // Replace with your resume PDF path in public folder
+            href="/resume.pdf"
             target="_blank"
           >
             <Image
@@ -82,17 +82,17 @@ export default function Hero() {
               height={20}
               sizes="20px"
             />
-            View Resume
+            Resume
           </a>
         </AnimatedText>
       </main>
 
-      <AnimatedText 
+      <AnimatedText
         className="row-start-3 flex gap-6 flex-wrap items-center justify-center"
       >
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="mailto:your-email" // Replace with your email address
+          href="mailto:omar.samy480@gmail.com" // Replace with your email address
         >
           <Image
             aria-hidden
@@ -102,11 +102,11 @@ export default function Hero() {
             width={16}
             height={16}
           />
-          Send Email
+          Email ME
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://www.linkedin.com/in/your-username" // Replace with your LinkedIn profile link
+          href="https://www.linkedin.com/in/0mar-sami" // Replace with your LinkedIn profile link
           target="_blank"
           rel="noopener noreferrer"
         >

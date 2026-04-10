@@ -15,29 +15,43 @@ const technologies = {
   // Frontend development skills examples
   frontend: [
     { name: 'React', icon: '/skills/react.svg' },
-    { name: 'Vue', icon: '/skills/vue.svg' },     // Add your familiar frontend frameworks
+    { name: 'Bootstrap', icon: '/skills/bootstrap.svg' },
+    { name: 'Angular', icon: '/skills/angular.svg' },
+    { name: 'HTML5', icon: '/skills/html5.svg' },
+    { name: 'CSS3', icon: '/skills/css3.svg' },
     { name: 'TypeScript', icon: '/skills/typescript.svg' },
   ],
-  
+
   // Backend development skills examples
   backend: [
     { name: 'Node.js', icon: '/skills/nodejs.svg' },
-    { name: 'Python', icon: '/skills/python.svg' }, // Add your familiar backend languages
-    { name: 'Java', icon: '/skills/java.svg' },
+    { name: 'PHP', icon: '/skills/php.svg' },
+    { name: 'Laravel', icon: '/skills/laravel.svg' },
+    { name: 'node.js', icon: '/skills/nodejs.svg' },
   ],
 
   // Database and deployment examples
   infrastructure: [
-    { name: 'MySQL', icon: '/skills/mysql.svg' },  // Add databases you've used
-    { name: 'MongoDB', icon: '/skills/mongodb.svg' },
-    { name: 'Docker', icon: '/skills/docker.svg' }, // Add deployment tools you're familiar with
+    { name: 'MySQL', icon: '/skills/mysql.svg' },
+    { name: 'Docker', icon: '/skills/docker.svg' },
+    { name: 'Hostinger', icon: '/skills/hostinger.svg' },
   ],
-
+  ai: [
+    { name: 'PyTorch', icon: '/skills/pytorch.svg' },
+    { name: 'NumPy', icon: '/skills/numpy.svg' },
+    { name: 'Machine Learning', icon: '/skills/microchip.svg' },
+  ],
   // Development tools examples
   tools: [
     { name: 'Git', icon: '/skills/git.svg' },
+    { name: 'GitHub', icon: '/skills/github.svg' },
     { name: 'VS Code', icon: '/skills/vscode.svg' },
-    { name: 'Postman', icon: '/skills/postman.svg' }, // Add your commonly used development tools
+  ],
+  languages: [
+    { name: 'JavaScript', icon: '/skills/javascript.svg' },
+    { name: 'C++', icon: '/skills/cpp.svg' },
+    { name: 'Python', icon: '/skills/python.svg' },
+    { name: 'Java', icon: '/skills/java.svg' },
   ]
 }
 
@@ -47,7 +61,9 @@ const categories = {
   frontend: 'Frontend Development',
   backend: 'Backend Development',
   infrastructure: 'Database & Deployment',
-  tools: 'Development Tools'
+  tools: 'System Programming & Tools',
+  languages: 'Programming Languages',
+  ai: "Data Science & Machine Learning",
 }
 
 // Usage instructions:
@@ -70,7 +86,7 @@ export default function MySkills() {
             Technical Skills
           </h1>
         </AnimatedText>
-        
+
         <div className="
           max-w-5xl mx-auto 
           space-y-8 sm:space-y-12 /* vertical spacing 8 on mobile, 12 on sm(640px) and above */
@@ -85,7 +101,7 @@ export default function MySkills() {
               ">
                 {categories[category]}
               </h2>
-              
+
               <div className="flex justify-center">
                 <div className="
                   flex flex-wrap justify-center 

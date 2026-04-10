@@ -27,27 +27,56 @@ export type ProjectDetail = {
 export const PROJECT_DATA: Record<number, ProjectDetail> = {
   1: {
     id: 1,
-    title: "Example Project 1",
-    company: "Example Company 1", 
-    overview: "Project 1 Overview",
-    mainImage: "/example1/main.png",
-    link: "https://example1.com",
+    title: "Physiotherapy Clinic Management System (Samy Clinic)",
+    company: "Samy Clinic",
+    overview: "Project Overview",
+    mainImage: "/project_1_overview.png",
+    link: "https://samyclinic.site/",
     features: [
       {
-        title: "Feature 1",
-        description: "Feature 1 Description",
-        image: "/example1/feature1.png"
+        title: "Interactive Patient Portal",
+        description: "A dedicated dashboard empowering patients to track their treatment progress and view completed sessions. It allows patients to receive personalized home exercise programs directly from their doctors and rate their sessions, ensuring continuous engagement and high-quality care.",
+        image: "/feature_1_1.png"
+      },
+      {
+        title: "Clinical Workspace for Doctors",
+        description: "Provides doctors with a comprehensive toolset to design customized treatment plans, assign remote home exercises, and monitor patient progress. It also features a transparent financial dashboard for doctors to track their daily appointments, cases handled, and automated commissions.",
+        image: "/feature_2_1.png",
+      },
+      {
+        title: "Interactive Patient Portal",
+        description: "Streamlines front-desk operations with a highly efficient queue management system to organize patient flow. Features lightning-fast invoicing with an AI-like 'Auto-Fetch' logic that instantly retrieves a patient's previous treatment plans, saving time and eliminating human billing errors.",
+        image: "/feature_3_1.png"
+      },
+      {
+        title: "Advanced Admin & Financial Core",
+        description: "A robust backend engine featuring hierarchical billing logic (Basic vs. Sub-services), flexible payment tracking (partial and full), and automated doctor commission calculations. Fully secured with Role-Based Access Control (RBAC) to ensure sensitive clinic data is strictly protected.",
+        image: "/feature_4_1.png",
       }
     ],
     techStack: [
       {
         category: "Frontend",
-        items: ["React", "TypeScript"]
+        items: ["Blade", "JavaScript", "jQuery", "Bootstrap", "AJAX"]
+      },
+      {
+        category: "Backend",
+        items: ["PHP", "Laravel", "MySQL"]
       }
     ],
     achievements: [
       {
-        metric: "Performance Improvement",
+        metric: "Billing Speed Improvement",
+        value: "80%",
+        change: 80
+      },
+      {
+        metric: "Billing Error Reduction",
+        value: "100%",
+        change: -100
+      },
+      {
+        metric: "Front-desk Efficiency",
         value: "50%",
         change: 50
       }
@@ -55,29 +84,58 @@ export const PROJECT_DATA: Record<number, ProjectDetail> = {
   },
   2: {
     id: 2,
-    title: "Example Project 2",
-    company: "Example Company 2",
-    overview: "Project 2 Overview", 
-    mainImage: "/example2/main.png",
+    title: "Magazine Management System",
+    company: "NTI",
+    overview: "Project Overview",
+    mainImage: "/project_2.png",
     link: "https://example2.com",
     features: [
       {
-        title: "Feature 1",
-        description: "Feature 1 Description",
-        image: "/example2/feature1.png"
+        title: "Dynamic Content Management System (CMS)",
+        description: "A robust administrative backend equipped with a resource-based interface, allowing authors to seamlessly publish, edit, and manage long-form articles, featured images, and topics.",
+        image: "/feature_1_2.png"
+      },
+      {
+        title: "Engaging Reader Experience & Filtering",
+        description: "A responsive public-facing portal designed for optimal reading. Visitors can explore the latest publications, read detailed articles, and intuitively filter content based on dynamic categories.",
+        image: "/feature_2_2.png"
+      },
+      {
+        title: "Secure Authentication & Author Attribution",
+        description: "Implemented secure login systems with protected administrative routes. The system automatically tracks and attributes published content to specific authors, ensuring transparency and accountability.",
+        image: "/feature_3_2.png"
+      },
+      {
+        title: "Optimized Media & Asset Management",
+        description: "Features an efficient media handling engine that dynamically manages image uploads and storage paths, ensuring fast loading times and organized server architecture for article thumbnails.",
+        image: "/feature_4_2.png"
       }
     ],
     techStack: [
       {
+        category: "Frontend",
+        items: ["Blade", "Bootstrap", "JavaScript", "HTML5", "CSS3"]
+      },
+      {
         category: "Backend",
-        items: ["Node.js", "Express"]
+        items: ["PHP", "Laravel", "MySQL"]
       }
     ],
     achievements: [
       {
-        metric: "User Satisfaction",
-        value: "95%",
-        change: 95
+        metric: "Publishing Efficiency", // كفاءة وسرعة نشر المقالات
+        value: "70%",
+        change: 70
+      },
+      {
+        metric: "Content Organization", // كفاءة فلترة البيانات وعرضها للقارئ
+        value: "100%",
+        change: 100
+      },
+      {
+        metric: "Admin Route Security", // نسبة حماية لوحة التحكم
+        value: "100%",
+        change: 100
       }
     ]
   }

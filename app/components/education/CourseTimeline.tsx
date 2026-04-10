@@ -13,29 +13,80 @@ interface CourseItem {
 // Example course data - Replace with your own education experience
 const courses: CourseItem[] = [
   {
-    date: "2023 - Present",
-    title: "Your University Name",
-    description: "Your Major | GPA: X.XX"
+    date: "2021 - Present",
+    title: "Benha University, Faculty of Engineering at Shoubra",
+    description: "B.S. in Computer Science | GPA: 3.00"
+  },
+  {
+    date: "Winter 2021",
+    title: "CPE101: Computer Programming",
+    description: "Variables | Control Flow | Functions"
+  },
+  {
+    date: "Fall 2022",
+    title: "CCE203: Structured Programming",
+    description: "Pointers | Memory Management | Structs"
+  },
+  {
+    date: "Winter 2023",
+    title: "CCE206: Object-Oriented Programming",
+    description: "Classes | Inheritance | Polymorphism"
   },
   {
     date: "Fall 2023",
-    title: "Course Name 1",
-    description: "Keyword1 | Keyword2 | Keyword3"
+    title: "CCE301: Logic Circuits",
+    description: "Boolean Algebra | Combinational Logic | Sequential Logic"
   },
   {
-    date: "Spring 2024", 
-    title: "Course Name 2",
-    description: "Keyword1 | Keyword2 | Keyword3"
+    date: "Fall 2023",
+    title: "CCE303: Algorithms and Data Structure",
+    description: "Trees | Graphs | Sorting | Algorithm Analysis"
   },
+  {
+    date: "Winter 2024",
+    title: "CCE307: Computer Organization",
+    description: "CPU Design | Memory Hierarchy | Assembly"
+  }
+  ,
   {
     date: "Fall 2024",
-    title: "Course Name 3",
-    description: "Keyword1 | Keyword2 | Keyword3"
+    title: "CCE406: Computer Architecture",
+    description: "Pipelining | Parallelism | Multicore Processors"
   },
   {
-    date: "Spring 2025",
-    title: "Course Name 4", 
-    description: "Keyword1 | Keyword2 | Keyword3"
+    date: "Winter 2025",
+    title: "CCE412: Mobile Computing",
+    description: "Cross-Platform Dev | Wireless Networks"
+  },
+  {
+    date: "Winter 2025",
+    title: "CCE413: Database systems",
+    description: "Relational Models | SQL | Query Optimization"
+  },
+  {
+    date: "Winter 2025",
+    title: "CCE414: Artificial Intelligence",
+    description: "Search Algorithms | Machine Learning Basics"
+  },
+  {
+    date: "Fall 2025",
+    title: "CCE504: Software Engineering",
+    description: "Agile | System Design | Testing"
+  },
+  {
+    date: "Fall 2025",
+    title: "CCE534: Neural Networks",
+    description: "Deep Learning | Convolutional Neural Networks | Recurrent Neural Networks | Transfer Learning"
+  },
+  {
+    date: "Winter 2026",
+    title: "CCE531: Compilers",
+    description: "Lexical Analysis | Syntax Parsing | Abstract Syntax Trees | Code Generation"
+  },
+  {
+    date: "Winter 2026",
+    title: "CCE510: Digital image processing",
+    description: "Image Enhancement | Spatial Filtering | Feature Extraction | Image Segmentation"
   }
 ]
 
@@ -68,7 +119,7 @@ export default function CourseTimeline() {
       <div className="relative">
         {/* Timeline background line */}
         <div className="absolute left-1/2 top-0 w-[2px] h-full bg-neutral-200 dark:bg-neutral-800 z-0" />
-        
+
         {/* Timeline items */}
         {displayedCourses.map((course, index) => (
           <AnimatedText key={index}>
@@ -102,9 +153,9 @@ export default function CourseTimeline() {
                   {course.description}
                 </p>
               </div>
-              
+
               <div className="relative z-20">
-                <motion.div 
+                <motion.div
                   className="w-3 h-3 sm:w-4 sm:h-4 bg-black dark:bg-white rounded-full"
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
@@ -116,7 +167,7 @@ export default function CourseTimeline() {
                   }}
                 />
               </div>
-              
+
               <div className="flex-1" />
             </div>
           </AnimatedText>
@@ -140,10 +191,10 @@ export default function CourseTimeline() {
               "
             >
               Show More
-              <svg 
-                className="w-5 h-5 stroke-black dark:stroke-white" 
-                viewBox="0 0 24 24" 
-                fill="none" 
+              <svg
+                className="w-5 h-5 stroke-black dark:stroke-white"
+                viewBox="0 0 24 24"
+                fill="none"
                 strokeWidth="2"
               >
                 <path d="M19 9l-7 7-7-7" />
@@ -169,10 +220,10 @@ export default function CourseTimeline() {
               "
             >
               Show Less
-              <svg 
-                className="w-5 h-5 stroke-black dark:stroke-white" 
-                viewBox="0 0 24 24" 
-                fill="none" 
+              <svg
+                className="w-5 h-5 stroke-black dark:stroke-white"
+                viewBox="0 0 24 24"
+                fill="none"
                 strokeWidth="2"
               >
                 <path d="M5 15l7-7 7 7" />

@@ -14,11 +14,12 @@ export default function About() {
           <AnimatedText>
             <div className="space-y-4">
               <p className="text-lg text-foreground/80 leading-relaxed">
-                Here, you can introduce your basic background information. Include your name, major, education and other basic information. This is an excellent place to showcase your personal characteristics.
+                Hi, I'm Omar, a Computer Engineering student and a Full-Stack Developer passionate about building high-impact, production-ready software. I enjoy turning complex requirements into scalable systems—from clean, dynamic interfaces and cross-platform mobile apps to robust backend services.
               </p>
               <p className="text-lg text-foreground/80 leading-relaxed">
-                You can describe your professional skills and experience in detail. Highlight your tech stack, project experience, and achievements in relevant fields. This information will help visitors better understand your professional capabilities.
+                I have actively contributed to healthcare-focused digital solutions, including developing "Samy Clinic," a comprehensive management system for physical therapy clinics, and building an AI-driven web application for chest disease detection as my graduation project.
               </p>
+
             </div>
           </AnimatedText>
 
@@ -26,7 +27,7 @@ export default function About() {
             <div className="space-y-4">
               <h2 className="text-2xl font-semibold">Personal Interests</h2>
               <p className="text-lg text-foreground/80 leading-relaxed">
-                In this section, you can share your personal interests and hobbies. This content can make your profile more vibrant and showcase your unique personality traits.
+                Beyond writing code, I am an engineering enthusiast fascinated by the intersection of software and the physical world. I spend my time exploring robotics, simulating autonomous systems, and studying distributed networks. I am also deeply driven by "Tech for Good," taking a strong personal interest in how AI and web architectures can be combined to create accessible healthcare solutions and medical diagnostic tools.
               </p>
             </div>
           </AnimatedText>
@@ -35,7 +36,7 @@ export default function About() {
             <div className="space-y-4">
               <h2 className="text-2xl font-semibold">Career Goals</h2>
               <p className="text-lg text-foreground/80 leading-relaxed">
-                Here you can describe your career development plans and goals. Clearly express the types of opportunities you are looking for and the goals you hope to achieve in your future career.
+                I'm actively seeking full-time Software Engineering opportunities (open to internships as well), where I can contribute to building scalable products, collaborate with strong teams, and push forward both engineering excellence and AI-driven innovation.
               </p>
             </div>
           </AnimatedText>

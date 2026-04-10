@@ -15,6 +15,7 @@ type Experience = {
   logo: string        // Company logo path (stored in public/companyicon/)
   skills: string[]    // Skills list (corresponding icons stored in public/skills/, filename in lowercase)
   description: string // Work description
+  description2: string
 }
 
 // Example data
@@ -27,21 +28,23 @@ type Experience = {
 const experiences: Experience[] = [
   {
     id: 1,
-    title: "Example Position 1",
-    company: "Example Company 1",
-    period: "January 2024 - Present",
-    logo: "/companyicon/company1.png", // Logo image path
-    skills: ["React", "TypeScript", "Node.js"], // Skills list
-    description: "This is a sample work description detailing your main responsibilities and achievements in this role."
+    title: "Full Stack Internship",
+    company: "National Telecommunication Institute (NTI)",
+    period: "August 2025 - September 2025",
+    logo: "/NTI-Logo-3.png", // Logo image path
+    skills: ["PHP", "Laravel", "Postman", "MySQL"], // Skills list
+    description: "Successfully finished an intensive 120-hour bootcamp, delivering 2 scalable backend applications using the Laravel PHP Framework.",
+    description2: "Architected MVC structure, managed MySQL databases, and executed secure authentication workflows and RESTful APIs."
   },
   {
-    id: 2, 
-    title: "Example Position 2",
-    company: "Example Company 2",
-    period: "June 2023 - December 2023",
-    logo: "/companyicon/company2.png",
-    skills: ["Python", "Django", "PostgreSQL"],
-    description: "This is another sample work description. Consider including specific numbers and achievements."
+    id: 2,
+    title: "Frontend Developer Internship",
+    company: "Digital Egypt Pioneers Initiative (DEPI) ",
+    period: "April 2024 - October 2024",
+    logo: "/DEB-2.png",
+    skills: ["Angular", "TypeScript"],
+    description: "Graduated from a 6-month professional track mastering TypeScript, Component-based architecture, and Single Page Applications (SPA).",
+    description2: "Engineered responsive interfaces and integrated complex RESTful APIs across 3 practical projects using the Angular framework."
   }
 ];
 
@@ -65,7 +68,7 @@ export default function Experience() {
           Green theme: start:'#10B981' end:'#047857'
           Pink theme: start:'#EC4899' end:'#BE185D'
         */}
-        <GradientBackground 
+        <GradientBackground
           sectionId="experience"
           gradientColors={{
             start: '#7C3AED',  // Light violet
@@ -83,7 +86,7 @@ export default function Experience() {
           {experiences.map((experience) => (
             <div key={experience.id}>
               <AnimatedText>
-                <div 
+                <div
                   onClick={() => {
                     setSelectedExperience(experience.id)
                     setModalOpen(true)
@@ -110,7 +113,7 @@ export default function Experience() {
                         className="object-cover"
                       />
                     </div>
-                    
+
                     <div className="flex-1">
                       <h3 className="
                         text-base sm:text-lg md:text-xl  /* Mobile: 16px, sm:18px, md:20px */
@@ -119,7 +122,7 @@ export default function Experience() {
                       ">
                         {experience.title}
                       </h3>
-                      
+
                       <p className="text-base text-gray-600 dark:text-gray-400">
                         {experience.company}
                       </p>
@@ -129,11 +132,14 @@ export default function Experience() {
                   <p className="text-base text-gray-600 dark:text-gray-400 mb-4">
                     {experience.period}
                   </p>
-                  
+
                   <p className="text-lg text-gray-600 dark:text-gray-400 mb-6">
                     {experience.description}
                   </p>
-                  
+                  <p className="text-lg text-gray-600 dark:text-gray-400 mb-6">
+                    {experience.description2}
+                  </p>
+
                   <div className="flex flex-wrap gap-2">
                     {experience.skills.map((skill) => (
                       <span

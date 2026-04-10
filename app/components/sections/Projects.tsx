@@ -34,20 +34,20 @@ type Project = {
 const projects: Project[] = [
   {
     id: 1,
-    title: "Example Project 1",
+    title: "Physiotherapy Clinic Management System (Samy Clinic)",
     description: "This is a sample project description. Detail the main features, technical architecture, your responsibilities and project highlights. Use concise language to emphasize key points.",
-    period: "2024.01 - 2024.03",
-    image: "/example1/screenshot.png", // Screenshot path
-    skills: ["React", "TypeScript", "Node.js"], // Tech stack
-    link: "https://github.com/username/project1"
+    period: "2025.05 - 2026.01",
+    image: "/project_1.png", // Screenshot path
+    skills: ["PHP & Laravel", "Database Systems", "blade", "Bootstrap", "Translating Business Requirements into Logic"], // Tech stack
+    link: "https://samyclinic.site/"
   },
   {
-    id: 2, 
-    title: "Example Project 2",
-    description: "Another example project. Description can include: 1) Problems solved 2) Technical solutions used 3) Results achieved 4) What you learned",
-    period: "2023.10 - 2023.12",
-    image: "/example2/demo.png",
-    skills: ["Vue.js", "Python", "MongoDB"],
+    id: 2,
+    title: "Magazine Management System",
+    description: "A dynamic Laravel-based CMS for digital magazines, featuring a secure admin dashboard for content creators and a responsive, category-driven reading portal.",
+    period: "2025.8 - 2025.9",
+    image: "/project_2.png",
+    skills: ["Laravel 12", "PHP / MySQL", "Authentication", "CRUD Operations"],
     link: "https://github.com/username/project2"
   }
 ];
@@ -65,7 +65,7 @@ export default function Projects() {
         relative
         overflow-hidden
       ">
-        <GradientBackground 
+        <GradientBackground
           sectionId="projects"
           gradientColors={{
             start: '#F43F5E',  // Light rose
@@ -78,12 +78,12 @@ export default function Projects() {
             Projects
           </h1>
         </AnimatedText>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 relative z-0 max-w-6xl w-full">
           {projects.map((project) => (
             <div key={project.id}>
               <AnimatedText>
-                <div 
+                <div
                   onClick={() => {
                     setSelectedProject(project.id)
                     setModalOpen(true)
@@ -108,19 +108,19 @@ export default function Projects() {
                       className="rounded-lg object-cover"
                     />
                   </div>
-                  
+
                   <h2 className="text-2xl font-semibold mb-2">
                     {project.title}
                   </h2>
-                  
+
                   <p className="text-base text-gray-600 dark:text-gray-400 mb-2">
                     {project.period}
                   </p>
-                  
+
                   <p className="text-base text-gray-600 dark:text-gray-400 mb-4 line-clamp-2">
                     {project.description}
                   </p>
-                  
+
                   <div className="flex flex-wrap gap-2">
                     {project.skills.map((skill) => (
                       <span
